@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viemport" content="width=device-width, initial-scale=1.0" />
+  <title>Css16</title>
+  <style>
+    body {
+      background: red;
+      color: #fff;
+      font-size: 30px;
+
+    }
+
+    p {
+      display: none;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        background: royalblue;
+      }
+    }
+
+    @media (max-width: 320px) {
+      body {
+        font-size: 50px;
+        background: purple;
+      }
+
+      p {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  Texto
+  <p>
+    Texto 02
+  </p>
+</body>
+
+</html>

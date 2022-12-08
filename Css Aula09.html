@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Css09</title>
+  <style>
+    p {
+      color: red;
+    }
+
+    span {
+      display: block;
+    }
+
+    p.exp-1 {
+      display: block;
+    }
+
+    p.exp-2 {
+      display: inline;
+    }
+
+    p.exp-3 {
+      display: inline-block;
+    }
+
+    .aparecer:hover p.exp-4 {
+      display: block;
+    }
+
+    p.exp-4 {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <span>
+    abc
+  </span>
+  <!-- exp-1 -->
+  <p class="exp-1">
+    Texto
+  </p>
+  <!-- exp-2 -->
+  <div>
+    Texto 2 abc
+    <p class="exp-2">
+      Texto
+    </p>
+  </div>
+  <!-- exp-3 -->
+  <div>
+    <p class="exp-3">
+      Texto
+    </p>
+  </div>
+  <!-- exp-4 -->
+  <div class="aparecer">
+    aparecer!
+    <p class="exp-4">
+      Texto 4
+    </p>
+  </div>
+</body>
+
+</html>
